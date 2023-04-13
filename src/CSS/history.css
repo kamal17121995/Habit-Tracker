@@ -1,0 +1,23 @@
+.history-title {
+    margin-left: 10px;
+
+}
+
+.render-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.work-done {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.work-done img {
+    height: 30px;
+    height: 30px;
+}

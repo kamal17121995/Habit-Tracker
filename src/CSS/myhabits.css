@@ -1,0 +1,45 @@
+.grid-container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas:
+        "nav"
+        "main";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+}
+
+.nav {
+    grid-area: "nav";
+    padding-top: 10px;
+    padding-left: 100px;
+    background-color: #e3e3e3;
+}
+
+.main-conatiner {
+    grid-area: "main";
+    padding-top: 10px;
+    padding-right: 100px;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+.date-day {
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history {
+    margin-left: 50px;
+    margin-top: 100px;
+}

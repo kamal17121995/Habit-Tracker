@@ -1,0 +1,59 @@
+.goal-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 45px;
+}
+
+.goal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.goal-title {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 30px;
+}
+
+.goal-button {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.goal-button .goal-img {
+    max-width: 16px;
+    max-height: 12px;
+    margin-right: 8px;
+}
+
+.goal-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 45px;
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+}
+
+.action img {
+    max-width: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+    /* :last-child {
+        margin: 0;
+    } */
+}
+
+.link {
+    text-decoration: none;
+
+}
