@@ -11,7 +11,7 @@ const Heading = styled.div`
 
 const Content = ({ id }) => {
     const items = JSON.parse(localStorage.getItem("itemArray"));
-    const selectedGoal = items.filter(item => item.id == id)[0];
+    const selectedGoal = items?.filter(item => item.id == id)[0];
     return (
         <div>
             <div style={{ display: 'flex', justifyContent: 'center' }}><Heading>{selectedGoal?.task?.name}</Heading></div>
