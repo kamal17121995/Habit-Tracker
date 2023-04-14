@@ -17,6 +17,7 @@ const MyHabits = () => {
 
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const dayOfWeek = daysOfWeek[date.getDay()];
+    console.log(setDate);
 
     return (
         <div className='grid-container'>
@@ -33,7 +34,7 @@ const MyHabits = () => {
                 </div>
                 <Content id={id}></Content>
 
-                <History>History</History>
+                <History id={id}>History</History>
             </div>
         </div>
     )

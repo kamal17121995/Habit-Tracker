@@ -7,9 +7,9 @@ const Goals = () => {
     const array = [
         { id: 1, task: { name: "Goal 1", status: "Not Done" } },
         { id: 2, task: { name: "Goal 2", status: "Not Done" } },
-        { id: 3, task: { name: "Goal 3", status: "Not Done" } },
-        { id: 4, task: { name: "Goal 4", status: "Not Done" } },
-        { id: 5, task: { name: "Goal 5", status: "Not Done" } },
+        // { id: 3, task: { name: "Goal 3", status: "Not Done" } },
+        // { id: 4, task: { name: "Goal 4", status: "Not Done" } },
+        // { id: 5, task: { name: "Goal 5", status: "Not Done" } },
     ]
 
     const [items, setItems] = useState(array);
@@ -34,7 +34,7 @@ const Goals = () => {
 
     const handleNewItemSubmit = (event) => {
         event.preventDefault();
-        const popup = { task: { 'name': newItem, 'status': 'Not Done' } }
+        const popup = { id: newItem, task: { 'name': newItem, 'status': 'Not Done' } }
         setItems([...items, popup]);
         setShowPopUp(false);
         setNewItem('');
@@ -85,9 +85,10 @@ const Goals = () => {
             }
 
             {items.map((item, index) => (
-                <div key={item.id} className='goal-row'>
+                <div key={index} className='goal-row'>
                     <div className='name'>
                         <Link
+
                             title={item.task.name}
                             to={`/${item.id}`}
                             className='link'>

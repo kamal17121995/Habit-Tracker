@@ -13,7 +13,7 @@ const HabitTrack = ({ id, selectedGoal }) => {
   //saving the todo with redux in history
   const handleOptionChange = () => {
 
-    if (todos.some(todo => todo.id == id)) return
+    if (todos.some(todo => todo.id === id)) return
 
     if (selectedOption) {
       console.log(todos)
