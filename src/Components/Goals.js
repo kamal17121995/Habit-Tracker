@@ -15,7 +15,7 @@ const Goals = () => {
     const [items, setItems] = useState(array);
 
     const [showPopUp, setShowPopUp] = useState(false);
-    const [newItem, setNewItem] = useState('');
+    const [newItem, setNewItem] = useState('items');
 
 
 
